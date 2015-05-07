@@ -17,10 +17,12 @@ public class ClaveTest {
 	
 	@Test
 	public void insertarNuevoParDeElementos() {
-		//Arrange
 		
-		//Act
-		//Assert
+		String clave="nombre";
+		String valor="luis";
+		
+		GestorClave.put(clave,valor);
+	
 	}
 
 }
