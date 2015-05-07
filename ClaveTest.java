@@ -2,15 +2,16 @@ package test;
 
 import static org.junit.Assert.*;
 
+import org.junit.Before;
 import org.junit.Test;
 
 public class ClaveTest {
 
-	private GestorClave[] gestor;
+	public GestorClave gestor;
 	
 	@Before
 	public void preparacion() {
-		gestor = new GestorClave[];
+		gestor = new GestorClave(10);
 	}
 	
 	
