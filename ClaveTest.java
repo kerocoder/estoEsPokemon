@@ -21,7 +21,8 @@ public class ClaveTest {
 		String clave="nombre";
 		String valor="luis";
 		
-		GestorClave.put(clave,valor);
+		gestor.put(clave,valor);
+		assertSame("bien", clave, gestor.gestor[0][1]);
 		
 	
 	}
