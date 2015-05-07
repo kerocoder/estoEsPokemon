@@ -22,6 +22,7 @@ public class ClaveTest {
 		String valor="luis";
 		
 		GestorClave.put(clave,valor);
+		
 	
 	}
 
