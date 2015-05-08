@@ -2,29 +2,18 @@ package test;
 
 import static org.junit.Assert.*;
 
+import java.util.Hashtable;
+
 import org.junit.Before;
 import org.junit.Test;
 
 public class ClaveTest {
 
-	public GestorClave gestor;
+	public GestorClave ges;
+	public String clave,valor;
 	
 	@Before
 	public void preparacion() {
-		gestor = new GestorClave(10);
+		ges = new GestorClave();
 	}
 	
-	
-	@Test
-	public void insertarNuevoParDeElementos() {
-		
-		String clave="nombre";
-		String valor="luis";
-		
-		gestor.put(clave,valor);
-		assertSame("bien", clave, gestor.gestor[0][1]);
-		
-	
-	}
-
-}
