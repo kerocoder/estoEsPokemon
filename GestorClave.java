@@ -41,4 +41,9 @@ public class GestorClave {
 		}
 		return s;
 	}
+	
+	public boolean containsKey(String clave){
+		boolean b = gestor.containsKey(clave);
+		return b;
+	}
 }
