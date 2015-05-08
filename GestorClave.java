@@ -20,4 +20,14 @@ public class GestorClave {
 		    gestor.put(clave,valor);
 		}
 	}
+	
+	public String get(String clave){
+		String s = null;
+		if (gestor.containsKey(clave)){
+			s = gestor.get(clave);
+		} else {
+			//throw DoesntExistsException;
+		}
+		return s;
+	}
 }

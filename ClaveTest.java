@@ -28,4 +28,16 @@ public class ClaveTest {
 		assertEquals(valor, ges.get(clave));
 		
 	}
+	
+	@Test
+	public void devolverValorAsociadoAUnaClave() {
+		
+		clave="apellido";
+		valor="Ketchum";
+		
+		ges.put(clave,valor);
+		
+		assertEquals(valor, ges.get(clave));
+		
+	}
 }
