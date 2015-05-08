@@ -40,4 +40,17 @@ public class ClaveTest {
 		assertEquals(valor, ges.get(clave));
 		
 	}
+	
+	@Test
+	public void devolverValorAsociadoAUnaClaveOPodDefecto() {
+		
+		clave="Ciudad";
+		valor="Pueblo Paleta";
+		String valorDefecto="suicidio";
+		
+		ges.put(clave,valor);
+		
+		assertEquals(valor, ges.getOrElse(clave,valorDefecto));
+		
+	}
 }
