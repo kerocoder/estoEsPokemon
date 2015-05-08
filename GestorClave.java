@@ -11,15 +11,13 @@ public class GestorClave {
 		gestor = new Hashtable<String, String>();
 	}
 	
-	@Test
-	public void insertarNuevoParDeElementos() {
-		
-		clave="nombre";
-		valor="Ash";
-		
-		ges.put(clave,valor);
-		
-		assertEquals(valor, ges.get(clave));
-		
+	public void put(String clave, String valor){
+		if (gestor.containsKey(clave)) {
+			String s = gestor.get(clave);
+			gestor.remove(clave,s);
+			gestor.put(clave,valor);
+		} else {
+		    gestor.put(clave,valor);
+		}
 	}
 }

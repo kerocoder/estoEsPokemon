@@ -17,4 +17,15 @@ public class ClaveTest {
 		ges = new GestorClave();
 	}
 	
+	@Test
+	public void insertarNuevoParDeElementos() {
+		
+		clave="nombre";
+		valor="Ash";
+		
+		ges.put(clave,valor);
+		
+		assertEquals(valor, ges.get(clave));
+		
+	}
 }
