@@ -30,4 +30,15 @@ public class GestorClave {
 		}
 		return s;
 	}
+	
+	public String getOrElse(String clave, String valorPorDefecto){
+		String s = null;
+		if (gestor.containsKey(clave)){
+			s = gestor.get(clave);
+
+		} else {
+			s= valorPorDefecto;
+		}
+		return s;
+	}
 }
