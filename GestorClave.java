@@ -52,4 +52,8 @@ public class GestorClave {
 		boolean b = !containsKey(clave);
 		return b;
 	}
+	
+	public int size(){
+		return gestor.size();
+	}
 }
