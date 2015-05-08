@@ -75,4 +75,16 @@ public class ClaveTest {
 		assertEquals(true, ges.remove(clave));
 		
 	}
+	
+	@Test
+	public void numeroEntradasArrayAsociativo() {
+		
+		clave="Pokémon principal";
+		valor="Pikachu";
+		
+		ges.put(clave,valor);
+		
+		assertEquals(1, ges.size());
+		
+	}
 }

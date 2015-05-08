@@ -46,4 +46,10 @@ public class GestorClave {
 		boolean b = gestor.containsKey(clave);
 		return b;
 	}
+	
+	public boolean remove(String clave){
+		gestor.remove(clave);
+		boolean b = !containsKey(clave);
+		return b;
+	}
 }
