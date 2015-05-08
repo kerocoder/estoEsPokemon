@@ -64,4 +64,15 @@ public class ClaveTest {
 		assertEquals(true, ges.containsKey(clave));
 		
 	}
+	@Test
+	public void eliminarClaveDelHashset() {
+		
+		clave="Sexo";
+		valor="Entre las piernas";
+		
+		ges.put(clave,valor);
+		
+		assertEquals(true, ges.remove(clave));
+		
+	}
 }
