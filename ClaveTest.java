@@ -53,4 +53,15 @@ public class ClaveTest {
 		assertEquals(valor, ges.getOrElse(clave,valorDefecto));
 		
 	}
+	@Test
+	public void comprobarSiExisteLaClave() {
+		
+		clave="ID de entrenador";
+		valor="12345678A";
+		
+		ges.put(clave,valor);
+		
+		assertEquals(true, ges.containsKey(clave));
+		
+	}
 }
